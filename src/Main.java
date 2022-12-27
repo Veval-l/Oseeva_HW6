@@ -96,6 +96,7 @@ public class Main {
             System.out.println("Итерация цикла " + i);
             {
             }System.out.println( );
+
         }
     }
 }
