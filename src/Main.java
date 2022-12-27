@@ -8,6 +8,9 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
+        task9();
+        task10();
 
     }
     public static void task1() {
@@ -18,9 +21,8 @@ public class Main {
 
         for(int i = 1; i <=10; i = i + 1){
             System.out.println("Итерация цикла " + i);
-            {
-            }System.out.println( );
         }
+        System.out.println( );
     }
     public static void task2() {
         /**
@@ -30,9 +32,8 @@ public class Main {
 
         for(int i = 10; i >= 1; i = i - 1){
             System.out.println("Итерация цикла " + i);
-            {
-            }System.out.println( );
         }
+        System.out.println( );
     }
     public static void task3() {
         /**
@@ -42,9 +43,8 @@ public class Main {
 
         for(int i = 0; i <=17; i = i + 2){
             System.out.println("Итерация цикла " + i);
-            {
-            }System.out.println( );
         }
+        System.out.println( );
     }
     public static void task4() {
         /**
@@ -54,9 +54,8 @@ public class Main {
 
         for(int i = 10; i >= -10; i = i - 1){
             System.out.println("Итерация цикла " + i);
-            {
-            }System.out.println( );
         }
+        System.out.println( );
     }
     public static void task5() {
         /**
@@ -66,9 +65,8 @@ public class Main {
 
         for(int i = 1904; i <=2096; i = i + 4){
             System.out.println(i + " год является високосным");
-            {
-            }System.out.println( );
         }
+        System.out.println( );
     }
     public static void task6() {
         /**
@@ -80,9 +78,8 @@ public class Main {
 
         for(int i = 7; i <=98; i = i + 7){
             System.out.println("Итерация цикла " + i);
-            {
-            }System.out.println( );
         }
+        System.out.println( );
     }
     public static void task7() {
         /**
@@ -94,9 +91,75 @@ public class Main {
 
         for(int i = 1; i <=512; i = i * 2){
             System.out.println("Итерация цикла " + i);
-            {
-            }System.out.println( );
-
         }
+        System.out.println( );
+    }
+    public static void task8() {
+        /**
+         *Посчитайте с помощью цикла for сумму годовых накоплений, если каждый месяц вы будете откладывать по 29 000 рублей «в банку».
+         *
+         * Выведите сумму накоплений за каждый месяц в консоль в формате: «Месяц …, сумма накоплений равна … рублей».
+         */
+        System.out.println("Задача 8");
+
+        int salary = 29000;
+        int total = 0;
+        for (int i = 1; i <= 12; i++) {
+            total = total + salary;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + total + "рублей");
+        }
+        System.out.println( );
+
+    }
+    public static void task9() {
+        /**
+         *Перепишите решение задачи выше при условии, что деньги вы откладывать будете не «в банку», а в банк под проценты — 12% годовых. Выведите сумму накоплений за каждый месяц в консоль в формате: «Месяц …, сумма накоплений равна … рублей».
+         */
+        System.out.println("Задача 9");
+
+        int salary = 29000;
+        int total = 0;
+        for (int i = 1; i <= 12; i++) {
+            total = total + total/100;
+            total = total + salary;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + total + "рублей");
+        }
+        System.out.println( );
+
+
+    }
+    public static void task10() {
+        /**
+         *Напишите программу, которая выводит в консоль таблицу умножения на 2:
+         *
+         * 2*1=2
+         *
+         * 2*2=4
+         *
+         * 2*3=6
+         *
+         * 2*4=8
+         *
+         * 2*5=10
+         *
+         * 2*6=12
+         *
+         * 2*7=14
+         *
+         * 2*8=16
+         *
+         * 2*9=18
+         *
+         * 2*10=20
+         */
+        System.out.println("Задача 10");
+
+        int numeral = 2;
+        int total = 0;
+        for(int i = 1; i <=10; i = i + 1){
+            total = total + numeral;
+            System.out.println("2*" + i + "=" + total);
+        }
+        System.out.println( );
     }
 }
